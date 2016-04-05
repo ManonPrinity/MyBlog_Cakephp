@@ -1,0 +1,123 @@
+2016-04-05 06:56:18 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.user_is' in 'field list'
+Request URL: /Projets_MVC_Blog/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Connection.php(270): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Query.php(921): Cake\Database\Query->execute()
+#6 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#7 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Query.php(871): Cake\ORM\Query->_all()
+#8 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#9 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 C:\wamp\www\Projets_MVC_Blog\src\Controller\UsersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 [internal function]: App\Controller\UsersController->index()
+#12 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#15 C:\wamp\www\Projets_MVC_Blog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-04-05 06:56:24 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.user_is' in 'field list'
+Request URL: /Projets_MVC_Blog/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Connection.php(270): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Query.php(921): Cake\Database\Query->execute()
+#6 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#7 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Query.php(871): Cake\ORM\Query->_all()
+#8 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#9 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 C:\wamp\www\Projets_MVC_Blog\src\Controller\UsersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 [internal function]: App\Controller\UsersController->index()
+#12 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#15 C:\wamp\www\Projets_MVC_Blog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-04-05 06:56:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Users.user_is' in 'field list'
+Request URL: /Projets_MVC_Blog/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Statement\MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(171): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Connection.php(270): Cake\Database\Log\LoggingStatement->execute()
+#4 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Query.php(188): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Query.php(921): Cake\Database\Query->execute()
+#6 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(272): Cake\ORM\Query->_execute()
+#7 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Query.php(871): Cake\ORM\Query->_all()
+#8 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Component\PaginatorComponent.php(171): Cake\ORM\Query->all()
+#9 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(688): Cake\Controller\Component\PaginatorComponent->paginate(Object(App\Model\Table\UsersTable), Array)
+#10 C:\wamp\www\Projets_MVC_Blog\src\Controller\UsersController.php(21): Cake\Controller\Controller->paginate(Object(App\Model\Table\UsersTable))
+#11 [internal function]: App\Controller\UsersController->index()
+#12 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#13 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#14 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#15 C:\wamp\www\Projets_MVC_Blog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 {main}
+
+
+2016-04-05 07:00:47 Error: [Cake\Datasource\Exception\InvalidPrimaryKeyException] Record not found in table "users" with primary key [NULL]
+Request URL: /Projets_MVC_Blog/users/edit
+Referer URL: http://localhost/Projets_MVC_Blog/users
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp\www\Projets_MVC_Blog\src\Controller\UsersController.php(76): Cake\ORM\Table->get(NULL, Array)
+#1 [internal function]: App\Controller\UsersController->edit()
+#2 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#3 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#4 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#5 C:\wamp\www\Projets_MVC_Blog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2016-04-05 07:38:51 Error: [InvalidArgumentException] Unknown type ""
+Request URL: /Projets_MVC_Blog/users/add
+Referer URL: http://localhost/Projets_MVC_Blog/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1580): Cake\Database\Type::build(NULL)
+#1 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1513): Cake\ORM\Table->_newId(Array)
+#2 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#3 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1391): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#4 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Connection.php(557): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#5 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1392): Cake\Database\Connection->transactional(Object(Closure))
+#6 C:\wamp\www\Projets_MVC_Blog\src\Controller\UsersController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#7 [internal function]: App\Controller\UsersController->add()
+#8 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#9 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#11 C:\wamp\www\Projets_MVC_Blog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
+2016-04-05 07:44:20 Error: [InvalidArgumentException] Unknown type ""
+Request URL: /Projets_MVC_Blog/users/add
+Referer URL: http://localhost/Projets_MVC_Blog/users/add
+Client IP: 127.0.0.1
+Stack Trace:
+#0 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1580): Cake\Database\Type::build(NULL)
+#1 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1513): Cake\ORM\Table->_newId(Array)
+#2 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1460): Cake\ORM\Table->_insert(Object(App\Model\Entity\User), Array)
+#3 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1391): Cake\ORM\Table->_processSave(Object(App\Model\Entity\User), Object(ArrayObject))
+#4 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Database\Connection.php(557): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#5 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\ORM\Table.php(1392): Cake\Database\Connection->transactional(Object(Closure))
+#6 C:\wamp\www\Projets_MVC_Blog\src\Controller\UsersController.php(54): Cake\ORM\Table->save(Object(App\Model\Entity\User))
+#7 [internal function]: App\Controller\UsersController->add()
+#8 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Controller\Controller.php(429): call_user_func_array(Array, Array)
+#9 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#10 C:\wamp\www\Projets_MVC_Blog\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\UsersController))
+#11 C:\wamp\www\Projets_MVC_Blog\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
